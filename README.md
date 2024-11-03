@@ -1,2 +1,4 @@
-# Curso-Java
-Curso básico de Java sacado de la FP de Desarrollo de Apps Multiplataforma.
+# <center> CURSO DE JAVA Básico. </center>
+![curso java](./Media_Java/CURSO.png)
+
+## Aquí podremos aprender java como si lo estudiaramos desde la FP de DAM.
