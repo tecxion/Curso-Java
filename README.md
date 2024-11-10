@@ -8,8 +8,9 @@
 
 #EJERCICIOS y sus soluciones
 
-###EL FAMOSO FIZZBUZZ
-///
+###EL FAMOSO FIZZBUZZ<br>
+
+
 /*
  * Escribe un programa que muestre por consola (con un print) los
  * números de 1 a 100 (ambos incluidos y con un salto de línea entre
@@ -18,7 +19,5 @@
  * - Múltiplos de 5 por la palabra "buzz".
  * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
  */
-
-  ///
 
   Las Soluciones la tenéis en la carpeta soluciones.
