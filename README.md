@@ -1,7 +1,7 @@
 # <center> CURSO DE JAVA Básico. </center>
 ![curso java](./Media_Java/CURSO.png)
 
-## Aquí podremos aprender java como si lo estudiaramos desde la FP de DAM.
+## Aquí podremos aprender java con ejercicios y soluciones.
 
 
 
