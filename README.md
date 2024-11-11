@@ -1,10 +1,10 @@
 # <center> CURSO DE JAVA Básico. </center>
 ![curso java](./Media_Java/CURSO.png)
 <br>
-##Bienvenidos a todos a este curso básico de Java, iré subiendo apuntes poco a poco según vayamos avanzando.
+## Bienvenidos a todos a este curso básico de Java, iré subiendo apuntes poco a poco según vayamos avanzando.
 ### Primero empezaremos con las variables que hay en java.
 
-####1. Tipos de Datos Primitivos
+#### 1. Tipos de Datos Primitivos
 
 Java tiene 8 tipos de datos primitivos. Estos tipos almacenan valores simples directamente y no son objetos.<br>
 - byte: Representa un número entero de 8 bits. Rango: -128 a 127. 
@@ -40,7 +40,7 @@ boolean isJavaFun = true;
 char c = 'A';
 ```
 
-####2. Tipos de Datos por Referencia
+#### 2. Tipos de Datos por Referencia
 
 Los tipos de datos por referencia son objetos y pueden almacenar direcciones de memoria. Al contrario de los tipos primitivos, estos tipos pueden almacenar datos más complejos.
 
@@ -57,7 +57,7 @@ int[] numbers = {1, 2, 3, 4, 5};
 Persona persona1 = new Persona("Ana", 30);
 ```
 
-####3. Modificadores de Variables
+#### 3. Modificadores de Variables
 
 Además del tipo de datos, las variables pueden tener diferentes modificadores que afectan cómo se pueden usar:
 
@@ -78,9 +78,9 @@ static int contador;
 
 
 
-#EJERCICIOS y sus soluciones
+# EJERCICIOS y sus soluciones
 
-###EL FAMOSO FIZZBUZZ<br>
+### EL FAMOSO FIZZBUZZ<br>
 ```
 /*
  * Escribe un programa que muestre por consola (con un print) los
