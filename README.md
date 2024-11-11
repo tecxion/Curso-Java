@@ -1,5 +1,6 @@
 # <center> CURSO DE JAVA Básico. </center>
 ![curso java](./Media_Java/CURSO.png)
+<br>
 ##Bienvenidos a todos a este curso básico de Java, iré subiendo apuntes poco a poco según vayamos avanzando.
 ### Primero empezaremos con las variables que hay en java.
 
@@ -8,25 +9,24 @@
 Java tiene 8 tipos de datos primitivos. Estos tipos almacenan valores simples directamente y no son objetos.<br>
 - byte: Representa un número entero de 8 bits. Rango: -128 a 127. 
 ```
- byte b = 10;
-
+byte b = 10;
 ```
 - short: Número entero de 16 bits. Rango: -32,768 a 32,767.
-  ```
-  short s = 1000;
-  ```
+```
+short s = 1000;
+```
 - int: Número entero de 32 bits. Rango: -2^31 a 2^31 - 1.
-  ```
-  int i = 100000;
-  ```
+```
+int i = 100000;
+```
 - long: Número entero de 64 bits. Rango: -2^63 a 2^63 - 1. Se puede añadir una L al final para indicar un valor largo.
 ```
 long l = 1000000000L;
 ```
 - float: Número de punto flotante de precisión simple (32 bits). Se usa para números decimales. Añade f o F al final.
-  ```
-  float f = 5.75f;
-  ```
+```
+float f = 5.75f;
+```
 - double: Número de punto flotante de doble precisión (64 bits). Es el tipo predeterminado para decimales en Java.
 ```
 double d = 19.99;
