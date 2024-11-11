@@ -70,6 +70,86 @@ final int MAX_AGE = 100;
 static int contador;
 ```
 
+## Estructura Básica de un Programa en Java
+<br>
+
+Un programa Java está organizado en clases, y dentro de la clase principal se encuentra el método main, que es el punto de entrada del programa.
+
+- Paquete (Opcional)
+  En Java, los paquetes agrupan clases relacionadas para organizar el código. Este paso es opcional y se usa más comúnmente en proyectos grandes.
+```
+package nombre.del.paquete;
+```
+
+- Importación de Bibliotecas (Opcional)
+La declaración import permite utilizar clases y métodos de bibliotecas predefinidas de Java o de otros paquetes. En este ejemplo, Scanner se usa para la entrada del usuario.
+```
+import java.util.Scanner;
+```
+>[!NOTE]
+>AQUÍ PUEDES ENCONTRAR TODAS LAS BIBLIOTECAS Y SU DESCRIPCIÓN. [BIBLIOTECAS]()
+
+- Definición de la Clase Principal
+Cada programa en Java debe contener al menos una clase. El nombre de la clase debe coincidir con el nombre del archivo. Si el archivo se llama MiPrograma.java, la clase debe llamarse MiPrograma.
+```
+public static void main(String[] args) { ... }
+```
+- Método main
+El método main es el punto de entrada del programa. Aquí es donde empieza la ejecución. La sintaxis public static void tiene un significado específico:
+
+public: El método es accesible desde cualquier lugar.
+static: Se puede ejecutar sin crear una instancia de la clase.
+void: No retorna ningún valor.
+String[] args: Permite pasar argumentos desde la línea de comandos al ejecutar el programa.
+
+- Declaración de Variables
+En este bloque, declaramos y asignamos variables. En el ejemplo, mensaje almacena un texto que luego se mostrará en la consola.
+```
+String mensaje = "¡Hola, Mundo!";
+```
+
+- Salida en Consola.
+Java usa System.out.println para mostrar texto en la consola. En este caso, imprime el contenido de la variable mensaje.
+```
+System.out.println(mensaje);
+```
+
+- Métodos Personalizados
+En Java, puedes crear métodos para organizar y reutilizar el código. Este método saludar toma un String nombre como parámetro y lo utiliza para imprimir un saludo personalizado.
+```
+public static void saludar(String nombre) { ... }
+```
+
+- EJEMPLO DE PROGRAMA
+```
+// Paquete (Opcional)
+package nombre.del.paquete;
+
+// Importación de bibliotecas (Opcional)
+import java.util.Scanner; // Importa una biblioteca para leer entradas del usuario
+
+// Definición de la clase principal
+public class MiPrograma {
+
+    // Método principal: punto de entrada del programa
+    public static void main(String[] args) {
+        
+        // Declaración de variables
+        String mensaje = "¡Hola, Mundo!"; // Texto de saludo
+        
+        // Salida de datos en la consola
+        System.out.println(mensaje);
+        
+        // Ejemplo de llamada a un método
+        saludar("Juan");
+    }
+
+    // Método personalizado: un bloque de código que realiza una tarea específica
+    public static void saludar(String nombre) {
+        System.out.println("¡Hola, " + nombre + "!");
+    }
+}
+```
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
