@@ -150,8 +150,150 @@ public class MiPrograma {
     }
 }
 ```
+## Programación orientada a objetos (POO) en java.
 
+###Conceptos Clave de la POO
+<br>
+Clase: Es el modelo o plantilla a partir del cual se crean objetos. Define las propiedades (atributos) y comportamientos (métodos) que tendrán los objetos.<br>
 
+Objeto: Es una instancia de una clase. Los objetos interactúan entre sí y representan entidades del mundo real.<br>
+
+Encapsulamiento: Es la capacidad de ocultar los detalles internos de un objeto y exponer solo lo necesario mediante métodos públicos.<br>
+
+Herencia: Permite que una clase (hija) herede atributos y métodos de otra clase (padre), promoviendo la reutilización del código.<br>
+
+Polimorfismo: Es la capacidad de una misma acción (método) de comportarse de diferentes maneras según el objeto que lo invoque.<br>
+
+Abstracción: Permite trabajar solo con los detalles esenciales de una entidad, ignorando los aspectos no relevantes.<br>
+
+#### Clases y Objetos:
+```
+// Definición de una clase
+public class Persona {
+    // Atributos
+    String nombre;
+    int edad;
+
+    // Constructor
+    public Persona(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    // Método
+    public void saludar() {
+        System.out.println("Hola, mi nombre es " + nombre + " y tengo " + edad + " años.");
+    }
+}
+
+// Uso de la clase
+public class Main {
+    public static void main(String[] args) {
+        // Crear un objeto
+        Persona persona1 = new Persona("Juan", 25);
+        
+        // Llamar a un método del objeto
+        persona1.saludar();
+    }
+}
+```
+### Encapsulamiento.
+#### Se logra utilizando modificadores de acceso (private, public, protected) y métodos getter y setter.
+
+```
+public class Producto {
+    private String nombre;
+    private double precio;
+
+    // Constructor
+    public Producto(String nombre, double precio) {
+        this.nombre = nombre;
+        this.precio = precio;
+    }
+
+    // Getter
+    public String getNombre() {
+        return nombre;
+    }
+
+    // Setter
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+}
+```
+
+### Herencia:
+```
+// Clase padre
+public class Animal {
+    public void hacerSonido() {
+        System.out.println("El animal hace un sonido.");
+    }
+}
+
+// Clase hija
+public class Perro extends Animal {
+    @Override
+    public void hacerSonido() {
+        System.out.println("El perro ladra.");
+    }
+}
+
+// Uso de herencia
+public class Main {
+    public static void main(String[] args) {
+        Perro perro = new Perro();
+        perro.hacerSonido(); // Salida: El perro ladra.
+    }
+}
+```
+
+### Polimorfismo:
+```
+public class Main {
+    public static void main(String[] args) {
+        Animal miAnimal = new Perro(); // Polimorfismo
+        miAnimal.hacerSonido(); // Salida: El perro ladra.
+    }
+}
+```
+### Abstracción:
+```
+// Clase abstracta
+abstract class Figura {
+    abstract void calcularArea();
+}
+
+// Subclase concreta
+class Circulo extends Figura {
+    double radio;
+
+    Circulo(double radio) {
+        this.radio = radio;
+    }
+
+    @Override
+    void calcularArea() {
+        double area = Math.PI * Math.pow(radio, 2);
+        System.out.println("El área del círculo es: " + area);
+    }
+}
+
+// Uso de la abstracción
+public class Main {
+    public static void main(String[] args) {
+        Figura miFigura = new Circulo(5);
+        miFigura.calcularArea();
+    }
+}
+```
+### Ventajas de la POO
+- Modularidad: El código se organiza en clases y objetos.<br>
+- Reutilización: Con la herencia, puedes reutilizar código existente.<br>
+- Mantenimiento: Las actualizaciones son más fáciles y seguras.<br>
+- Flexibilidad: El polimorfismo permite cambiar el comportamiento del programa sin alterar su estructura básica. <br>
+<br>
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Aquí podremos aprender java con ejercicios y soluciones.
 
