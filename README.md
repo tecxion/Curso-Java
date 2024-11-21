@@ -152,7 +152,7 @@ public class MiPrograma {
 ```
 ## Programación orientada a objetos (POO) en java.
 
-###Conceptos Clave de la POO
+### Conceptos Clave de la POO
 <br>
 Clase: Es el modelo o plantilla a partir del cual se crean objetos. Define las propiedades (atributos) y comportamientos (métodos) que tendrán los objetos.<br>
 
