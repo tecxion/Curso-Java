@@ -295,6 +295,7 @@ public class Main {
 - Flexibilidad: El polimorfismo permite cambiar el comportamiento del programa sin alterar su estructura básica. <br>
 <br>
 
+## BUCLES Y CONDICIONALES.
 ### La siguiente parte son bucles y los condicionales, los cuales son necesarios en programación.
 
 Las estructuras de control en Java son fundamentales para dirigir el flujo de ejecución de un programa. Estas permiten tomar decisiones, repetir bloques de código y manejar diferentes escenarios de manera eficiente. A continuación, se describen brevemente las principales estructuras de control:
@@ -321,8 +322,8 @@ Permiten ejecutar bloques de código dependiendo de ciertas condiciones:
     return: Finaliza la ejecución de un método y devuelve un valor (si aplica).
     ```
 
-    ### Excepciones!!
-      #### Parte muy importante en el manejo de errores en los programas.
+    ## Excepciones!!
+      ### Parte muy importante en el manejo de errores en los programas.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Aquí podremos aprender java con ejercicios y soluciones.
