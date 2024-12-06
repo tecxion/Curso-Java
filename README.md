@@ -305,9 +305,24 @@ Permiten ejecutar bloques de código dependiendo de ciertas condiciones:
   - switch: Es útil para manejar múltiples casos posibles en una expresión.    
     ```      
        switch (variable) {
+          case (valor_variable1):
           case (valor_variable2):
-          case (valor_variable):
     ```
+  - Bucles: for, while y do-while, se usan para crear código según una condición, el más común suele ser el bucle for.
+    ```
+    for (int i = 0; i < 10; i++)
+    while (condición es true) se ejecutará hasta que la  condición cambie a false.
+    do { sentencias que se ejecutan siempre en el código para pasar posteriormente al while.
+    ```
+  - Estructuras de control de salto: Aquí podemos encontrar las siguientes estructuras.
+    ```
+    break: esta estructura rompe el flujo del bucle y sale de el.
+    continue: Salta a la siguiente iteración del bucle.
+    return: Finaliza la ejecución de un método y devuelve un valor (si aplica).
+    ```
+
+    ### Excepciones!!
+      #### Parte muy importante en el manejo de errores en los programas.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Aquí podremos aprender java con ejercicios y soluciones.
