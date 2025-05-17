@@ -322,8 +322,105 @@ Permiten ejecutar bloques de código dependiendo de ciertas condiciones:
     return: Finaliza la ejecución de un método y devuelve un valor (si aplica).
     ```
 
-    ## Excepciones!!
-      ### Parte muy importante en el manejo de errores en los programas.
+## Excepciones!!
+  una excepción es un evento que ocurre durante la ejecución del programa y que interrumpe el flujo normal de instrucciones.
+  Las excepciones permiten manejar errores de forma controlada, evitando que el programa se cierre inesperadamente.
+  ```
+  try {
+  // Código que puede lanzar una excepción
+  } catch (ExceptionTipo e) {
+  // Código para manejar la excepción
+  } finally {
+  // Bloque opcional que siempre se ejecuta
+  }
+  ```
+  Digamos que dentro del "try" irá todo aquel código que si lanza una excepción retornará al catch y finally es algo que se ejecutará siempre, de o no el error.
+
+  También existe la opción de crear excepciones personalizadas creando una clase:
+  ```
+  class MiExcepcion extends Exception {
+    public MiExcepcion(String mensaje) {
+        super(mensaje);
+    }
+  }
+  ```
+### Lo siguiente que vamos a ver so los Arrays y estructoras de almacenamiento de información:
+## Arrays Unidimensionales y Multidimensionales
+
+  Un array en Java es una estructura de datos que permite almacenar múltiples valores del mismo tipo en una sola variable, en lugar de declarar variables por separado. Son muy útiles cuando necesitas trabajar con colecciones de datos del mismo tipo, como una lista de     números o una tabla.
+
+  Ejemplo de array unidimensional.
+  ```
+  int[] numeros = new int[5]; // Crea un array de 5 enteros
+
+  numeros[0] = 10;   // lo que está dentro de los corchetes es la posición del array
+  numeros[1] = 20;   // Todos los arrays comienzan por 0
+
+  // También puede declararse e inicializarse así:
+  int[] otros = {1, 2, 3, 4, 5};
+
+  //También pueden rellenarse o imprimirse por un bucle for Ej:
+  for (int i = 0; i < numeros.length; i++) {
+      System.out.println(numeros[i]);
+  }
+  ```
+  Ejemplo de Array Multidimensional
+  Un array multidimensional (como una matriz) es un array de arrays. El más común es el bidimensional (matriz de filas y columnas).
+  ```
+int[][] matriz = new int[3][2]; // 3 filas, 2 columnas
+
+matriz[0][0] = 1;
+matriz[0][1] = 2;
+
+// Inicialización directa:
+int[][] tabla = {
+    {1, 2},
+    {3, 4},
+    {5, 6}
+};
+
+for (int i = 0; i < tabla.length; i++) {    //Igual que antes lo recorriamos con una sola variable
+    for (int j = 0; j < tabla[i].length; j++) {       // Ahora necesitamos 2 ( i y j )
+        System.out.print(tabla[i][j] + " ");
+    }
+    System.out.println();
+}
+```
+## Clases y métodos abstractos:
+Ahora explicaré lo que son las clases y los métodos abstractos, es algo que es dificil de ver pero cuando se entienda es mucho más sencillo:
+
+Una clase abstracta es una clase que no se puede instanciar directamente. Se utiliza para definir una estructura base que otras clases deben extender.
+```
+abstract class Animal { // Clase abstracta
+    abstract void hacerSonido(); // Método abstracto
+
+    void respirar() {
+        System.out.println("El animal respira");
+    }
+}
+
+class Perro extends Animal {
+    void hacerSonido() {
+        System.out.println("Guau!");
+    }
+}
+```
+Un método abstracto es un método sin cuerpo (sin implementación). Obliga a las clases hijas a sobrescribirlo.
+
+### Interfaces:
+Una interfaz define un contrato: qué métodos debe tener una clase, sin preocuparse de cómo se implementan.
+```
+interface Volador {
+    void volar();
+}
+
+class Pajaro implements Volador {
+    public void volar() {
+        System.out.println("El pájaro vuela");
+    }
+}
+```
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Aquí podremos aprender java con ejercicios y soluciones.
