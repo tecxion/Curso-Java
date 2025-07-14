@@ -7,8 +7,8 @@
 #### 1. Tipos de Datos Primitivos
 
 Java tiene 8 tipos de datos primitivos. Estos tipos almacenan valores simples directamente y no son objetos.<br>
-- byte: Representa un número entero de 8 bits. Rango: -128 a 127. 
-```
+- byte: Representa un número entero de 8 bits. Rango: -128 a 127.
+```java
 byte b = 10;
 ```
 - short: Número entero de 16 bits. Rango: -32,768 a 32,767.
