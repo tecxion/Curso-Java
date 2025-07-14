@@ -12,31 +12,31 @@ Java tiene 8 tipos de datos primitivos. Estos tipos almacenan valores simples di
 byte b = 10;
 ```
 - short: Número entero de 16 bits. Rango: -32,768 a 32,767.
-```
+```java
 short s = 1000;
 ```
 - int: Número entero de 32 bits. Rango: -2^31 a 2^31 - 1.
-```
+```java
 int i = 100000;
 ```
 - long: Número entero de 64 bits. Rango: -2^63 a 2^63 - 1. Se puede añadir una L al final para indicar un valor largo.
-```
+```java
 long l = 1000000000L;
 ```
 - float: Número de punto flotante de precisión simple (32 bits). Se usa para números decimales. Añade f o F al final.
-```
+```java
 float f = 5.75f;
 ```
 - double: Número de punto flotante de doble precisión (64 bits). Es el tipo predeterminado para decimales en Java.
-```
+```java
 double d = 19.99;
 ```
 - boolean: Representa un valor lógico: true o false
-```
+```java
 boolean isJavaFun = true;
 ```
 - char: Representa un solo carácter en formato Unicode (16 bits). Su rango es de 0 a 65,535.
-```
+```java
 char c = 'A';
 ```
 
@@ -45,15 +45,15 @@ char c = 'A';
 Los tipos de datos por referencia son objetos y pueden almacenar direcciones de memoria. Al contrario de los tipos primitivos, estos tipos pueden almacenar datos más complejos.
 
 - String: Representa una secuencia de caracteres. Aunque no es un tipo de datos primitivo, es un tipo de referencia comúnmente utilizado.
-```
+```java
 String greeting = "Hello, World!";
 ```
 - Arrays (Arreglos): Una colección de elementos del mismo tipo de datos. Se puede definir para cualquier tipo de datos primitivo o referencia.
-```
+```java
 int[] numbers = {1, 2, 3, 4, 5};
 ```
 - Clases y Objetos: Puedes crear tus propios tipos de referencia al definir clases. Estos se instancian como objetos.
-```
+```java
 Persona persona1 = new Persona("Ana", 30);
 ```
 
@@ -62,11 +62,11 @@ Persona persona1 = new Persona("Ana", 30);
 Además del tipo de datos, las variables pueden tener diferentes modificadores que afectan cómo se pueden usar:
 
 - final: Define una constante (un valor inmutable).
-```
+```java
 final int MAX_AGE = 100;
 ```
 - static: Define una variable compartida por todas las instancias de una clase.
-```
+```java
 static int contador;
 ```
 
@@ -77,13 +77,13 @@ Un programa Java está organizado en clases, y dentro de la clase principal se e
 
 - Paquete (Opcional)
   En Java, los paquetes agrupan clases relacionadas para organizar el código. Este paso es opcional y se usa más comúnmente en proyectos grandes.
-```
+```java
 package nombre.del.paquete;
 ```
 
 - Importación de Bibliotecas (Opcional)
 La declaración import permite utilizar clases y métodos de bibliotecas predefinidas de Java o de otros paquetes. En este ejemplo, Scanner se usa para la entrada del usuario.
-```
+```java
 import java.util.Scanner;
 ```
 >[!NOTE]
@@ -91,7 +91,7 @@ import java.util.Scanner;
 
 - Definición de la Clase Principal
 Cada programa en Java debe contener al menos una clase. El nombre de la clase debe coincidir con el nombre del archivo. Si el archivo se llama MiPrograma.java, la clase debe llamarse MiPrograma.
-```
+```java
 public static void main(String[] args) { ... }
 ```
 - Método main
@@ -104,24 +104,24 @@ String[] args: Permite pasar argumentos desde la línea de comandos al ejecutar 
 
 - Declaración de Variables
 En este bloque, declaramos y asignamos variables. En el ejemplo, mensaje almacena un texto que luego se mostrará en la consola.
-```
+```java
 String mensaje = "¡Hola, Mundo!";
 ```
 
 - Salida en Consola.
 Java usa System.out.println para mostrar texto en la consola. En este caso, imprime el contenido de la variable mensaje.
-```
+```java
 System.out.println(mensaje);
 ```
 
 - Métodos Personalizados
 En Java, puedes crear métodos para organizar y reutilizar el código. Este método saludar toma un String nombre como parámetro y lo utiliza para imprimir un saludo personalizado.
-```
+```java
 public static void saludar(String nombre) { ... }
 ```
 
 - EJEMPLO DE PROGRAMA
-```
+```java
 // Paquete (Opcional)
 package nombre.del.paquete;
 
@@ -167,7 +167,7 @@ Polimorfismo: Es la capacidad de una misma acción (método) de comportarse de d
 Abstracción: Permite trabajar solo con los detalles esenciales de una entidad, ignorando los aspectos no relevantes.<br>
 
 #### Clases y Objetos:
-```
+```java
 // Definición de una clase
 public class Persona {
     // Atributos
@@ -200,7 +200,7 @@ public class Main {
 ### Encapsulamiento.
 #### Se logra utilizando modificadores de acceso (private, public, protected) y métodos getter y setter.
 
-```
+```java
 public class Producto {
     private String nombre;
     private double precio;
@@ -224,7 +224,7 @@ public class Producto {
 ```
 
 ### Herencia:
-```
+```java
 // Clase padre
 public class Animal {
     public void hacerSonido() {
@@ -250,7 +250,7 @@ public class Main {
 ```
 
 ### Polimorfismo:
-```
+```java
 public class Main {
     public static void main(String[] args) {
         Animal miAnimal = new Perro(); // Polimorfismo
@@ -259,7 +259,7 @@ public class Main {
 }
 ```
 ### Abstracción:
-```
+```java
 // Clase abstracta
 abstract class Figura {
     abstract void calcularArea();
@@ -304,19 +304,19 @@ Las estructuras de control en Java son fundamentales para dirigir el flujo de ej
 Permiten ejecutar bloques de código dependiendo de ciertas condiciones:
   - Entre ellos podemos encontrar el If, else if y else, con decisiones basadas en condiciones booleanas.
   - switch: Es útil para manejar múltiples casos posibles en una expresión.    
-    ```      
+    ```java    
        switch (variable) {
           case (valor_variable1):
           case (valor_variable2):
     ```
   - Bucles: for, while y do-while, se usan para crear código según una condición, el más común suele ser el bucle for.
-    ```
+    ```java
     for (int i = 0; i < 10; i++)
     while (condición es true) se ejecutará hasta que la  condición cambie a false.
     do { sentencias que se ejecutan siempre en el código para pasar posteriormente al while.
     ```
   - Estructuras de control de salto: Aquí podemos encontrar las siguientes estructuras.
-    ```
+    ```java
     break: esta estructura rompe el flujo del bucle y sale de el.
     continue: Salta a la siguiente iteración del bucle.
     return: Finaliza la ejecución de un método y devuelve un valor (si aplica).
@@ -325,7 +325,7 @@ Permiten ejecutar bloques de código dependiendo de ciertas condiciones:
 ## Excepciones!!
   una excepción es un evento que ocurre durante la ejecución del programa y que interrumpe el flujo normal de instrucciones.
   Las excepciones permiten manejar errores de forma controlada, evitando que el programa se cierre inesperadamente.
-  ```
+  ```java
   try {
   // Código que puede lanzar una excepción
   } catch (ExceptionTipo e) {
@@ -337,7 +337,7 @@ Permiten ejecutar bloques de código dependiendo de ciertas condiciones:
   Digamos que dentro del "try" irá todo aquel código que si lanza una excepción retornará al catch y finally es algo que se ejecutará siempre, de o no el error.
 
   También existe la opción de crear excepciones personalizadas creando una clase:
-  ```
+  ```java
   class MiExcepcion extends Exception {
     public MiExcepcion(String mensaje) {
         super(mensaje);
@@ -350,7 +350,7 @@ Permiten ejecutar bloques de código dependiendo de ciertas condiciones:
   Un array en Java es una estructura de datos que permite almacenar múltiples valores del mismo tipo en una sola variable, en lugar de declarar variables por separado. Son muy útiles cuando necesitas trabajar con colecciones de datos del mismo tipo, como una lista de     números o una tabla.
 
   Ejemplo de array unidimensional.
-  ```
+  ```java
   int[] numeros = new int[5]; // Crea un array de 5 enteros
 
   numeros[0] = 10;   // lo que está dentro de los corchetes es la posición del array
@@ -366,7 +366,7 @@ Permiten ejecutar bloques de código dependiendo de ciertas condiciones:
   ```
   Ejemplo de Array Multidimensional
   Un array multidimensional (como una matriz) es un array de arrays. El más común es el bidimensional (matriz de filas y columnas).
-  ```
+  ```java
 int[][] matriz = new int[3][2]; // 3 filas, 2 columnas
 
 matriz[0][0] = 1;
@@ -390,7 +390,7 @@ for (int i = 0; i < tabla.length; i++) {    //Igual que antes lo recorriamos con
 Ahora explicaré lo que son las clases y los métodos abstractos, es algo que es dificil de ver pero cuando se entienda es mucho más sencillo:
 
 Una clase abstracta es una clase que no se puede instanciar directamente. Se utiliza para definir una estructura base que otras clases deben extender.
-```
+```java
 abstract class Animal { // Clase abstracta
     abstract void hacerSonido(); // Método abstracto
 
@@ -409,7 +409,7 @@ Un método abstracto es un método sin cuerpo (sin implementación). Obliga a la
 
 ### Interfaces:
 Una interfaz define un contrato: qué métodos debe tener una clase, sin preocuparse de cómo se implementan.
-```
+```java
 interface Volador {
     void volar();
 }
